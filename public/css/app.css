@@ -20575,13 +20575,16 @@ main .hero_image {
   background-size: cover;
   background-position: top;
 }
-main .comics {
+main .comics,
+main .characters {
   background-color: rgb(28, 28, 28);
 }
-main .comics .container {
+main .comics .container,
+main .characters .container {
   position: relative;
 }
-main .comics .container .title {
+main .comics .container .title,
+main .characters .container .title {
   position: absolute;
   top: 0;
   left: 0;
@@ -20591,7 +20594,8 @@ main .comics .container .title {
   color: white;
   padding: 0.5rem 1.5rem;
 }
-main .comics .container .comic .img img {
+main .comics .container .comic .img img,
+main .characters .container .comic .img img {
   width: 100%;
   aspect-ratio: 1/1;
   -o-object-fit: cover;
@@ -20599,16 +20603,19 @@ main .comics .container .comic .img img {
   -o-object-position: top;
      object-position: top;
 }
-main .comics .container .comic .text {
+main .comics .container .comic .text,
+main .characters .container .comic .text {
   color: white;
   margin-top: 0.5rem;
   text-transform: uppercase;
 }
-main .comics .container .load_more {
+main .comics .container .load_more,
+main .characters .container .load_more {
   text-align: center;
   margin-top: 3rem;
 }
-main .comics .container .load_more a {
+main .comics .container .load_more a,
+main .characters .container .load_more a {
   text-decoration: none;
   text-transform: uppercase;
   color: white;

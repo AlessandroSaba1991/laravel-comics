@@ -19,7 +19,8 @@
                 </div>
                 <div class="col-8">
                     <ul>
-                        <li><a href="#">characters</a></li>
+                        <li><a href="{{route('home')}}">home</a></li>
+                        <li><a href="{{route('characters')}}">characters</a></li>
                         <li><a href="#">comics</a></li>
                         <li><a href="#">movies</a></li>
                         <li><a href="#">tv</a></li>

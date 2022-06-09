@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="hero_image"></div>
 <section class="comics">
     <div class="container py-5">
         <div class="title">

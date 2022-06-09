@@ -13,7 +13,7 @@ $white: white;
 $black: #000000;
 
 /* Common */
-body{
+body {
     font-family: "Fira Sans Condensed", sans-serif;
 }
 
@@ -85,7 +85,8 @@ main {
         background-size: cover;
         background-position: top;
     }
-    .comics {
+    .comics,
+    .characters {
         background-color: $bgMain;
         .container {
             position: relative;
@@ -186,34 +187,34 @@ footer {
         background-color: $bgFooter;
         padding: 1.5rem 0;
         .sign_up {
-          button {
-            background-color: transparent;
-            border: 1px solid $primaryColor;
-            padding: 1rem;
-            text-transform: uppercase;
-            color: $white;
-            font-weight: 700;
-          }
+            button {
+                background-color: transparent;
+                border: 1px solid $primaryColor;
+                padding: 1rem;
+                text-transform: uppercase;
+                color: $white;
+                font-weight: 700;
+            }
         }
         .follow {
-          display: flex;
-          align-items: center;
-          padding: 0.5rem;
-          justify-content: flex-end;
-          h5 {
-            color: $primaryColor;
-            margin-right: 1.5rem;
-            margin-bottom: 0;
-            text-transform: uppercase;
-          }
-          .icon {
-            img {
-              margin-right: 1rem;
+            display: flex;
+            align-items: center;
+            padding: 0.5rem;
+            justify-content: flex-end;
+            h5 {
+                color: $primaryColor;
+                margin-right: 1.5rem;
+                margin-bottom: 0;
+                text-transform: uppercase;
             }
-            & img:last-child {
-              margin-right: 0;
+            .icon {
+                img {
+                    margin-right: 1rem;
+                }
+                & img:last-child {
+                    margin-right: 0;
+                }
             }
-          }
         }
-      }
+    }
 }
