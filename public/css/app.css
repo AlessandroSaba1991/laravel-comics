@@ -20504,6 +20504,15 @@ readers do not read off random characters that represent icons */
   border-width: 0;
 }
 
+/* utlity */
+.btn-primary {
+  padding: 0.75rem 5rem;
+  color: white;
+  background-color: rgb(2, 130, 249);
+  font-weight: 700;
+}
+
+/* body */
 header .top {
   background-color: rgb(2, 130, 249);
   color: white;
@@ -20548,4 +20557,49 @@ header .bottom .search {
 header .bottom .search input {
   text-align: right;
   border: none;
+}
+
+main .hero_image {
+  height: 400px;
+  background-image: url("../img/jumbotron.jpg");
+  background-size: cover;
+  background-position: top;
+}
+main .comics {
+  background-color: rgb(28, 28, 28);
+}
+main .comics .container {
+  position: relative;
+}
+main .comics .container .title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0, -50%);
+  text-transform: uppercase;
+  background-color: rgb(2, 130, 249);
+  color: white;
+  padding: 0.5rem 1.5rem;
+}
+main .comics .container .comic .img img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+main .comics .container .comic .text {
+  color: white;
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+}
+main .comics .container .load_more {
+  text-align: center;
+  margin-top: 3rem;
+}
+main .comics .container .load_more a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
 }
