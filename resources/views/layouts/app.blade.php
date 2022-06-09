@@ -12,6 +12,7 @@
         <main>
             @include('partials.jumbo')
             @yield('content')
+            @include('partials.merchandise')
         </main>
         @include('partials.footer')
         <script src="{{asset('js/app.js')}}"></script>

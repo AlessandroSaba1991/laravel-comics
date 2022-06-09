@@ -86,7 +86,8 @@ main {
         background-position: top;
     }
     .comics,
-    .characters {
+    .characters,
+    .homepage {
         background-color: $bgMain;
         .container {
             position: relative;
@@ -99,6 +100,9 @@ main {
                 background-color: $primaryColor;
                 color: $white;
                 padding: 0.5rem 1.5rem;
+                h2{
+                    margin-bottom: 0;
+                }
             }
             .comic {
                 .img {
@@ -144,6 +148,10 @@ main {
                 text-transform: uppercase;
             }
         }
+    }
+    .welcome{
+        background-color: $primaryColor;
+        border-radius: 0.75rem;
     }
 }
 footer {

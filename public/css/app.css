@@ -20576,15 +20576,18 @@ main .hero_image {
   background-position: top;
 }
 main .comics,
-main .characters {
+main .characters,
+main .homepage {
   background-color: rgb(28, 28, 28);
 }
 main .comics .container,
-main .characters .container {
+main .characters .container,
+main .homepage .container {
   position: relative;
 }
 main .comics .container .title,
-main .characters .container .title {
+main .characters .container .title,
+main .homepage .container .title {
   position: absolute;
   top: 0;
   left: 0;
@@ -20594,8 +20597,14 @@ main .characters .container .title {
   color: white;
   padding: 0.5rem 1.5rem;
 }
+main .comics .container .title h2,
+main .characters .container .title h2,
+main .homepage .container .title h2 {
+  margin-bottom: 0;
+}
 main .comics .container .comic .img img,
-main .characters .container .comic .img img {
+main .characters .container .comic .img img,
+main .homepage .container .comic .img img {
   width: 100%;
   aspect-ratio: 1/1;
   -o-object-fit: cover;
@@ -20604,18 +20613,21 @@ main .characters .container .comic .img img {
      object-position: top;
 }
 main .comics .container .comic .text,
-main .characters .container .comic .text {
+main .characters .container .comic .text,
+main .homepage .container .comic .text {
   color: white;
   margin-top: 0.5rem;
   text-transform: uppercase;
 }
 main .comics .container .load_more,
-main .characters .container .load_more {
+main .characters .container .load_more,
+main .homepage .container .load_more {
   text-align: center;
   margin-top: 3rem;
 }
 main .comics .container .load_more a,
-main .characters .container .load_more a {
+main .characters .container .load_more a,
+main .homepage .container .load_more a {
   text-decoration: none;
   text-transform: uppercase;
   color: white;
@@ -20639,6 +20651,10 @@ main .merchandises .merchandise .img {
 main .merchandises .merchandise .text {
   color: white;
   text-transform: uppercase;
+}
+main .welcome {
+  background-color: rgb(2, 130, 249);
+  border-radius: 0.75rem;
 }
 
 footer .top {
