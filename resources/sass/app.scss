@@ -11,6 +11,11 @@ $bgFooter: rgba(48, 48, 48, 1);
 $textFooter: rgba(121, 121, 121, 1);
 $white: white;
 $black: #000000;
+$success: #55ba59;
+$text-comic: #003f5e;
+$text-secondary-comic: #00a9d9;
+$text-parag: #555555;
+$success-light: #b4f27c;
 
 /* Common */
 body {
@@ -22,12 +27,19 @@ img {
     max-height: 100%;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* utlity */
 .btn-primary {
     padding: 0.75rem 5rem;
     color: $white;
     background-color: $primaryColor;
     font-weight: 700;
+}
+.sm_ {
+    max-width: 1065px;
 }
 
 /* body */
@@ -56,14 +68,15 @@ header {
                     font-weight: 400;
                     padding: 2.375rem 0;
                     color: $black;
+                    &:hover,
+                    &.active {
+                        color: $primaryColor;
+                        box-shadow: 0px 9px $primaryColor;
+                    }
                     i {
                         margin-left: 0.5rem;
                         color: $primaryColor;
                     }
-                }
-                &:hover a {
-                    color: $primaryColor;
-                    box-shadow: 0px 8px $primaryColor;
                 }
             }
         }
@@ -78,12 +91,51 @@ header {
         }
     }
 }
+
 main {
     .hero_image {
         height: 400px;
         background-image: url("../img/jumbotron.jpg");
         background-size: cover;
         background-position: top;
+    }
+
+    .single_comic {
+        .blue_line {
+            height: 55px;
+            background-color: $primaryColor;
+        }
+        .container {
+            position: relative;
+            .card_comic {
+                position: absolute;
+                bottom: 100%;
+                left: 0;
+                padding: 1rem;
+                .img_comic {
+                    position: relative;
+                    border: 2px solid $white;
+                    .text_img {
+                        font-size: 12;
+                        font-weight: 500;
+                        .top {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            background-color: $text-secondary-comic;
+                        }
+                        .bottom {
+                            width: 100%;
+                            text-align: center;
+                            background-color: $text-secondary-comic;
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                        }
+                    }
+                }
+            }
+        }
     }
     .comics,
     .characters,
@@ -100,7 +152,7 @@ main {
                 background-color: $primaryColor;
                 color: $white;
                 padding: 0.5rem 1.5rem;
-                h2{
+                h2 {
                     margin-bottom: 0;
                 }
             }
@@ -149,11 +201,12 @@ main {
             }
         }
     }
-    .welcome{
+    .welcome {
         background-color: $primaryColor;
         border-radius: 0.75rem;
     }
 }
+
 footer {
     .top {
         background-image: url("../img/footer-bg.jpg");

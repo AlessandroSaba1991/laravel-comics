@@ -18,10 +18,53 @@ Route::get('/', function () {
 
 Route::get('/comics', function () {
     $comics= config('db.comics');
-    return view('comics',compact('comics'));
-})->name('comics');
+    return view('comics.index',compact('comics'));
+})->name('comics.index');
 
 Route::get('/characters', function () {
     $characters= config('db.characters');
     return view('characters',compact('characters'));
 })->name('characters');
+
+Route::get('/comics/{id}', function($id){
+    $comics = config('db.comics');
+    if($id >= 0 && is_numeric($id) && $id < count($comics)){
+       $comic = $comics[$id];
+       return view('comics.show',compact('comic'));
+   } else {
+       abort(404);
+   }
+})->name('comics.show');
+
+Route::get('/movies', function () {
+    return view('movies');
+})->name('movies');
+
+Route::get('/tv', function () {
+    return view('tv');
+})->name('tv');
+
+Route::get('/games', function () {
+    return view('games');
+})->name('games');
+
+Route::get('/collectibles', function () {
+    return view('collectibles');
+})->name('collectibles');
+
+Route::get('/videos', function () {
+    return view('videos');
+})->name('videos');
+
+Route::get('/fans', function () {
+    return view('fans');
+})->name('fans');
+
+Route::get('/news', function () {
+    return view('news');
+})->name('news');
+
+Route::get('/shop', function () {
+    return view('shop');
+})->name('shop');
+
