@@ -16,6 +16,9 @@ $text-comic: #003f5e;
 $text-secondary-comic: #00a9d9;
 $text-parag: #555555;
 $success-light: #b4f27c;
+$bg-details: #F6F6F6;
+$border-details:#E3E3E3;
+
 
 /* Common */
 body {
@@ -166,6 +169,27 @@ main {
                         color: $white;
                         margin-bottom: 0;
                     }
+                }
+            }
+        }
+    }
+    .details_comic{
+        background-color: $bg-details;
+        border-top: 1px solid $border-details;
+        .detail{
+            border-top: 1px solid $border-details;
+            border-bottom: 1px solid $border-details;
+            padding: 0.5rem 0;
+            &:last-child{
+                border-top:1px solid transparent;
+            }
+            p{
+                margin-bottom: 0;
+                font-size: 14px;
+                color: $text-comic;
+                font-weight: 500;
+                span{
+                    color: $text-secondary-comic;
                 }
             }
         }
