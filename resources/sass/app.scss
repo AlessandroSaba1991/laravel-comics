@@ -135,6 +135,39 @@ main {
                     }
                 }
             }
+            .text_comic{
+                h2{
+                    color: $text-comic;
+                }
+                span{
+                    color: $success-light;
+                }
+                .price{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 0.75rem 1.5rem;
+                    background-color: $success;
+                    border-bottom: 1px solid $black;
+                    border-right: 1px solid $black;
+                    p{
+                        color: $white;
+                        margin-bottom: 0;
+                    }
+                }
+                .check{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0.75rem 0;
+                    background-color: $success;
+                    border-bottom: 1px solid $black;
+                    p{
+                        color: $white;
+                        margin-bottom: 0;
+                    }
+                }
+            }
         }
     }
     .comics,

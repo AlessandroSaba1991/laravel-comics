@@ -12,4 +12,5 @@
         </div>
     </div>
 </section>
+@include('partials.merchandise')
 @endsection

@@ -3,7 +3,7 @@
 @section('content')
 <section class="single_comic">
     <div class="blue_line"></div>
-    <div class="container sm_ p-5">
+    <div class="container sm_ py-5">
         <div class="card_comic">
             <div class="img_comic">
                 <img src="{{$comic['thumb']}}" alt="{{$comic['series']}}" />
@@ -17,21 +17,36 @@
                 </div>
             </div>
         </div>
-        <div class="row gy-4 row-cols-1 row-cols-md-3 row-cols-lg-6">
-            <div class="col">
-                <div class="comic">
-                    <div class="img">
-
+        <div class="row g-0">
+            <div class="col-8">
+                <div class="text_comic">
+                    <h2 class="text-uppercase mb-3 mt-4">{{$comic['title']}}</h2>
+                    <div class="row g-0">
+                        <div class="col-9">
+                            <div class="price">
+                                <p><span>U.S. Price: </span>{{$comic['price']}}</p>
+                                <p><span>AVAILABLE</span></p>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="check">
+                                <p>Check Availability <i class="fa-solid fa-caret-down"></i></p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="text">
-                        <small>{{$comic['series']}}</small>
-                    </div>
+                    <p class="mt-3">{{$comic['description']}}</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="advertisement text-end">
+                    <small>ADVERTISEMENT</small>
+                    <img src="{{asset('../img/adv.jpg')}}" alt="">
                 </div>
             </div>
         </div>
-        <div class="load_more">
-            <a href="#" class="btn-primary">load more</a>
-        </div>
     </div>
+</section>
+<section class="details">
+
 </section>
 @endsection

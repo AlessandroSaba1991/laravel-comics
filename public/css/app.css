@@ -20618,6 +20618,37 @@ main .single_comic .container .card_comic .img_comic .text_img .bottom {
   bottom: 0;
   left: 0;
 }
+main .single_comic .container .text_comic h2 {
+  color: #003f5e;
+}
+main .single_comic .container .text_comic span {
+  color: #b4f27c;
+}
+main .single_comic .container .text_comic .price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1.5rem;
+  background-color: #55ba59;
+  border-bottom: 1px solid #000000;
+  border-right: 1px solid #000000;
+}
+main .single_comic .container .text_comic .price p {
+  color: white;
+  margin-bottom: 0;
+}
+main .single_comic .container .text_comic .check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 0;
+  background-color: #55ba59;
+  border-bottom: 1px solid #000000;
+}
+main .single_comic .container .text_comic .check p {
+  color: white;
+  margin-bottom: 0;
+}
 main .comics,
 main .characters,
 main .homepage {
