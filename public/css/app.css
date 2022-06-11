@@ -20659,7 +20659,6 @@ main .details_comic .detail {
   padding: 0.5rem 0;
 }
 main .details_comic .detail:last-child {
-  border-top: 1px solid #e3e3e3;
   border-bottom: 1px solid #e3e3e3;
 }
 main .details_comic .detail p {
@@ -20673,6 +20672,24 @@ main .details_comic .detail p span {
 }
 main .details_comic .detail p span.text_dark {
   color: #003f5e;
+}
+main .slider_details {
+  background-color: #f6f6f6;
+  border-top: 1px solid #e3e3e3;
+}
+main .slider_details .col:last-child .card_slider {
+  border-right: 1px solid #e3e3e3;
+}
+main .slider_details .card_slider {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  border-left: 1px solid #e3e3e3;
+}
+main .slider_details .card_slider h6 {
+  color: #9F9F9F;
+  font-size: 12px;
 }
 main .comics,
 main .characters,

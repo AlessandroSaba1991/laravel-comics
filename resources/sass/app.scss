@@ -18,7 +18,7 @@ $text-parag: #555555;
 $success-light: #b4f27c;
 $bg-details: #f6f6f6;
 $border-details: #e3e3e3;
-
+$text-slider:#9F9F9F;
 /* Common */
 body {
     font-family: "Fira Sans Condensed", sans-serif;
@@ -180,7 +180,6 @@ main {
             border-top: 1px solid $border-details;
             padding: 0.5rem 0;
             &:last-child {
-                border-top: 1px solid $border-details;
                 border-bottom: 1px solid $border-details;
             }
             p {
@@ -194,6 +193,24 @@ main {
                         color: $text-comic;
                     }
                 }
+            }
+        }
+    }
+    .slider_details{
+        background-color: $bg-details;
+        border-top: 1px solid $border-details;
+        .col:last-child .card_slider{
+            border-right: 1px solid $border-details;
+        }
+        .card_slider{
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            text-transform: uppercase;
+            border-left: 1px solid $border-details;
+            h6{
+                color: $text-slider;
+                font-size: 12px;
             }
         }
     }
