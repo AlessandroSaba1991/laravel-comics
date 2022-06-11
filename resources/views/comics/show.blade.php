@@ -1,5 +1,7 @@
 @extends('layouts.app')
-
+@section('custom-css')
+<link rel="stylesheet" href="{{asset('css/comics_show.css')}}">
+@endsection
 @section('content')
 <section class="single_comic">
     <div class="blue_line"></div>
@@ -48,21 +50,21 @@
 </section>
 <section class="details_comic py-4">
     <div class="container sm_">
-        <div class="row">
+        <div class="row gx-5">
             <div class="col-6">
-                <div class="talent">
-                    <h4>Talent</h4>
+                <div class="talent pb-5 mb-5 pe-3">
+                    <h5>Talent</h5>
                     <div class="detail">
                         <div class="row">
                             <div class="col-4">
                                 <p>Art By:</p>
                             </div>
                             <div class="col-8">
-                            <p>
-                                @php $artist = implode('<span class="text_dark">,</span> ',$comic['artists'])
-                                @endphp
-                                <span>{!!$artist!!}</span>
-                            </p>
+                                <p>
+                                    @php $artist = implode('<span class="text_dark">,</span> ',$comic['artists'])
+                                    @endphp
+                                    <span>{!!$artist!!}</span>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -72,11 +74,11 @@
                                 <p>Written By:</p>
                             </div>
                             <div class="col-8">
-                            <p>
-                            @php $writer = implode('<span class="text_dark">,</span> ',$comic['writers'])
-                                @endphp
-                                <span>{!!$writer!!}</span>
-                            </p>
+                                <p>
+                                    @php $writer = implode('<span class="text_dark">,</span> ',$comic['writers'])
+                                    @endphp
+                                    <span>{!!$writer!!}</span>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -84,16 +86,16 @@
             </div>
             <div class="col-6">
                 <div class="specs">
-                    <h4>Specs</h4>
+                    <h5>Specs</h5>
                     <div class="detail">
                         <div class="row">
                             <div class="col-4">
                                 <p>Series:</p>
                             </div>
                             <div class="col-8">
-                            <p>
-                                <span class="text-uppercase">{{$comic['series']}}</span>
-                            </p>
+                                <p>
+                                    <span class="text-uppercase">{{$comic['series']}}</span>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -103,7 +105,7 @@
                                 <p>U.S. Price:</p>
                             </div>
                             <div class="col-8">
-                            <p>{{$comic['price']}}</p>
+                                <p>{{$comic['price']}}</p>
                             </div>
                         </div>
                     </div>
@@ -113,9 +115,9 @@
                                 <p>On Sale Date:</p>
                             </div>
                             <div class="col-8">
-                            <p>
-                                {{date_format(date_create_from_format("Y-m-d",$comic['sale_date']),"M d Y")}}
-                            </p>
+                                <p>
+                                    {{date_format(date_create_from_format("Y-m-d",$comic['sale_date']),"M d Y")}}
+                                </p>
                             </div>
                         </div>
                     </div>

@@ -6,6 +6,7 @@
         <title>Laravel DC Comics</title>
         <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300;400;500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{{asset('css/app.css')}}">
+        @yield('custom-css')
     </head>
     <body>
         @include('partials.header')

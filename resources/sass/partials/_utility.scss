@@ -1,0 +1,11 @@
+@import "./partials/_variables";
+
+.btn-primary {
+    padding: 0.75rem 5rem;
+    color: $white;
+    background-color: $primaryColor;
+    font-weight: 700;
+}
+.sm_ {
+    max-width: 1065px;
+}

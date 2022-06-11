@@ -20504,7 +20504,6 @@ readers do not read off random characters that represent icons */
   border-width: 0;
 }
 
-/* Common */
 body {
   font-family: "Fira Sans Condensed", sans-serif;
 }
@@ -20518,7 +20517,6 @@ a {
   text-decoration: none;
 }
 
-/* utlity */
 .btn-primary {
   padding: 0.75rem 5rem;
   color: white;
@@ -20528,9 +20526,7 @@ a {
 
 .sm_ {
   max-width: 1065px;
-}
-
-/* body */
+} /* body */
 header .top {
   background-color: rgb(2, 130, 249);
   color: white;
@@ -20582,114 +20578,6 @@ main .hero_image {
   background-image: url("../img/jumbotron.jpg");
   background-size: cover;
   background-position: top;
-}
-main .single_comic .blue_line {
-  height: 55px;
-  background-color: rgb(2, 130, 249);
-}
-main .single_comic .container {
-  position: relative;
-}
-main .single_comic .container .card_comic {
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  padding: 1rem;
-}
-main .single_comic .container .card_comic .img_comic {
-  position: relative;
-  border: 2px solid white;
-}
-main .single_comic .container .card_comic .img_comic .text_img {
-  font-size: 12;
-  font-weight: 500;
-}
-main .single_comic .container .card_comic .img_comic .text_img .top {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #00a9d9;
-}
-main .single_comic .container .card_comic .img_comic .text_img .bottom {
-  width: 100%;
-  text-align: center;
-  background-color: #00a9d9;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-main .single_comic .container .text_comic h2 {
-  color: #003f5e;
-}
-main .single_comic .container .text_comic span {
-  color: #b4f27c;
-}
-main .single_comic .container .text_comic .price {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.75rem 1.5rem;
-  background-color: #55ba59;
-  border-bottom: 1px solid #000000;
-  border-right: 1px solid #000000;
-}
-main .single_comic .container .text_comic .price p {
-  color: white;
-  margin-bottom: 0;
-}
-main .single_comic .container .text_comic .check {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.75rem 0;
-  background-color: #55ba59;
-  border-bottom: 1px solid #000000;
-}
-main .single_comic .container .text_comic .check p {
-  color: white;
-  margin-bottom: 0;
-}
-main .details_comic {
-  min-height: 360px;
-  background-color: #f6f6f6;
-  border-top: 1px solid #e3e3e3;
-}
-main .details_comic .detail {
-  border-top: 1px solid #e3e3e3;
-  padding: 0.5rem 0;
-}
-main .details_comic .detail:last-child {
-  border-bottom: 1px solid #e3e3e3;
-}
-main .details_comic .detail p {
-  margin-bottom: 0;
-  font-size: 14px;
-  color: #003f5e;
-  font-weight: 500;
-}
-main .details_comic .detail p span {
-  color: #00a9d9;
-}
-main .details_comic .detail p span.text_dark {
-  color: #003f5e;
-}
-main .slider_details {
-  background-color: #f6f6f6;
-  border-top: 1px solid #e3e3e3;
-}
-main .slider_details .col:last-child .card_slider {
-  border-right: 1px solid #e3e3e3;
-}
-main .slider_details .card_slider {
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  text-transform: uppercase;
-  border-left: 1px solid #e3e3e3;
-}
-main .slider_details .card_slider h6 {
-  color: #9F9F9F;
-  font-size: 12px;
 }
 main .comics,
 main .characters,
