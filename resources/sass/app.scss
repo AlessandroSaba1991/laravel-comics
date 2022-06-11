@@ -16,9 +16,8 @@ $text-comic: #003f5e;
 $text-secondary-comic: #00a9d9;
 $text-parag: #555555;
 $success-light: #b4f27c;
-$bg-details: #F6F6F6;
-$border-details:#E3E3E3;
-
+$bg-details: #f6f6f6;
+$border-details: #e3e3e3;
 
 /* Common */
 body {
@@ -138,14 +137,14 @@ main {
                     }
                 }
             }
-            .text_comic{
-                h2{
+            .text_comic {
+                h2 {
                     color: $text-comic;
                 }
-                span{
+                span {
                     color: $success-light;
                 }
-                .price{
+                .price {
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
@@ -153,19 +152,19 @@ main {
                     background-color: $success;
                     border-bottom: 1px solid $black;
                     border-right: 1px solid $black;
-                    p{
+                    p {
                         color: $white;
                         margin-bottom: 0;
                     }
                 }
-                .check{
+                .check {
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     padding: 0.75rem 0;
                     background-color: $success;
                     border-bottom: 1px solid $black;
-                    p{
+                    p {
                         color: $white;
                         margin-bottom: 0;
                     }
@@ -173,23 +172,27 @@ main {
             }
         }
     }
-    .details_comic{
+    .details_comic {
+        min-height: 360px;
         background-color: $bg-details;
         border-top: 1px solid $border-details;
-        .detail{
+        .detail {
             border-top: 1px solid $border-details;
-            border-bottom: 1px solid $border-details;
             padding: 0.5rem 0;
-            &:last-child{
-                border-top:1px solid transparent;
+            &:last-child {
+                border-top: 1px solid $border-details;
+                border-bottom: 1px solid $border-details;
             }
-            p{
+            p {
                 margin-bottom: 0;
                 font-size: 14px;
                 color: $text-comic;
                 font-weight: 500;
-                span{
+                span {
                     color: $text-secondary-comic;
+                    &.text_dark {
+                        color: $text-comic;
+                    }
                 }
             }
         }

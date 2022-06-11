@@ -20650,16 +20650,17 @@ main .single_comic .container .text_comic .check p {
   margin-bottom: 0;
 }
 main .details_comic {
-  background-color: #F6F6F6;
-  border-top: 1px solid #E3E3E3;
+  min-height: 360px;
+  background-color: #f6f6f6;
+  border-top: 1px solid #e3e3e3;
 }
 main .details_comic .detail {
-  border-top: 1px solid #E3E3E3;
-  border-bottom: 1px solid #E3E3E3;
+  border-top: 1px solid #e3e3e3;
   padding: 0.5rem 0;
 }
 main .details_comic .detail:last-child {
-  border-top: 1px solid transparent;
+  border-top: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
 }
 main .details_comic .detail p {
   margin-bottom: 0;
@@ -20669,6 +20670,9 @@ main .details_comic .detail p {
 }
 main .details_comic .detail p span {
   color: #00a9d9;
+}
+main .details_comic .detail p span.text_dark {
+  color: #003f5e;
 }
 main .comics,
 main .characters,
